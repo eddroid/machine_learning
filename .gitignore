@@ -1,2 +1,3 @@
 py/lib/*
 py/bin/*
+*.pyc
