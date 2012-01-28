@@ -1,0 +1,649 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Machine Learning</title>
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        don't we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+<body>
+
+<!--
+    
+    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+    
+    It's worth to notice the `impress-not-supported` class. This class means, that browser doesn't
+    support features required by impress.js, so you can apply some fallback styles in your CSS.
+    It's not necessary to add it manually on this element. If the script detects that browser is not
+    good enough it will add this class, but keeping it in HTML means that users without JavaScript
+    will also get fallback styles.
+    
+-->
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+    <!--
+        Here is where interesting thing start to happen.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
+        the 'camera' shows them on each step of the presentation.
+        
+        Positioning information is passed through data attributes.
+        
+        In the example below we only specify x and y position of the step element with `data-x="-1000"`
+        and `data-y="-1500` attributes. This means that **the center** of the element (yes, the center)
+        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'.
+        
+        It will not be rotated or scaled.
+    -->
+    <div class="step slide" data-x="-1000" data-y="-1500">
+      <q><h1>Machine Learning</h1></q>
+      <p>(Python edition)</p>
+      <br />
+      <p>Ed Toro</p>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+      <p class="center"><img src="images/why.png" width="40%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+      <q>How do you teach a machine to learn?</q>
+      <ol>
+        <li>Input.
+      </ol>
+      <div class="center"><iframe width="420" height="315" src="http://www.youtube.com/embed/Pj-qBUWOYfE" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+      <q>How do you teach a machine to learn?</q>
+      <ol>
+        <li>Input.
+        <li>Data structures.
+      </ol>
+      <q class="center">[[1,2,3], [4,5,6], [7,8,9]]</q>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="-1500">
+      <q>How do you teach a machine to learn?</q>
+      <ol>
+        <li>Input.
+        <li>Data structure.
+        <li>Reduction.
+      </ol>
+      <p class="center"><img src="images/reduce.gif" width="20%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+      <q>How do you teach a machine to learn?</q>
+      <ol>
+        <li>Input.
+        <li>Data structure.
+        <li>Reduction.
+        <li>Inference.
+      </ol>
+      <p class="center"><img src="images/inference.png" width="20%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+      <q>Input: visitors to a "guess your weight" site</q>
+      <p class="center"><img src="images/haters.gif" width=70%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="-1500">
+      <q>Data Structure: you can't record everything about a visitor</q>
+      <br />
+      <p class="center"><img src="images/skeleton.png" width=40%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="7000" data-y="-1500">
+      <q>Reduction: you can't guess every value you've recorded</q>
+      <br />
+      <q class="center">Average weight of all previous visitors: 150lbs</q>
+    </div>
+
+    <div class="step slide" data-x="8000" data-y="-1500">
+      <q>Inference: What can we <i>infer</i> from the data? What weight do we guess?</q>
+      <br />
+      <ul>
+        <li>The next visitor probably weighs as much as the average of all previous visitors.
+        <li>The next male visitor probably weighs as much as the average of all previous male visitors.
+        <li>etc...
+      </ul>
+      <br />
+    </div>
+
+    <div class="step slide" data-x="9000" data-y="-1500">
+      <q>Python Data Structures</q>
+      <ul>
+        <li>lists: [1,2,3,4]
+        <li>tuples: (1,2)
+        <li>dictionaries: {'haterz':2, 'lovahs':0, 'playas':2}
+        <li>nested combinations of the above:<br/>[2, [2,3], (4,5), {'playa':'hatah'}]
+        <li>serialized storage: databases, files, NoSQL, etc.
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-600">
+      <q>Request/Response Cycle - Feedback</q>
+      <ol>
+        <li>Receive user request
+        <li>Infer a response based on prior knowledge data structures
+        <li>Receive user request with feedback
+        <li>Combine user feedback with existing body of knowledge
+        <li>Reduce
+     </ol>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-600">
+      <q>Request/Response Cycle - Training</q>
+      <ol>
+        <li>Collect user data 
+        <li>Build data structures
+        <li>Reduce
+        <li>Receive user request
+        <li>Infer a response based on prior knowledge
+     </ol>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-600">
+      <p>Simple example: Inference by mean average</p>
+      <br/>
+      <ul>
+        <li>Input &amp; Data Structure<br/>
+        <br/>
+        knowledge = <br/>&nbsp;&nbsp;retrieve_and_deserialize_data_from_datasource()<br/>
+        knowledge.append(user_weight)<br/>&nbsp;
+        <li>Reduction &amp; Inference<br/>
+        <br/>
+        from numpy import average<br/>
+        reduction = average(knowledge)<br/>
+        response.inference = reduction<br/>
+      </ul>
+      <br/>
+      The mean average "learns". When it's wrong, it adapts.
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-600">
+      <p>Faster simple example: Inference by mean average</p>
+      <br/>
+      <ul>
+        <li>Reduction &amp; Inference<br/>
+        <br/>
+        prev_sum, prev_count = cache.get("key")<br/>
+        new_sum = prev_sum + user_weight<br/>
+        new_count = prev_count + 1<br/>
+        cache.put("key", (new_sum, new_count))<br/>
+        new_mean = new_sum / new_count<br/>
+        response.inference = new_mean<br/>
+      </ul>
+      <br/>
+      The knowledge set is <i>big data</i>. The ability to do incremental updates is key to machine learning performance.
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="-600">
+      <p>Another simple example: genetic algorithm</p>
+      <br/>
+      best_guess = retrieve_most_successful_guess()<br/>
+      response.inference = best_guess<br/>
+      <br/>
+      if we_guessed_correctly():<br/>
+      &nbsp;&nbsp;best_guess.success += 1<br/>
+      else:<br/>
+      &nbsp;&nbsp;best_guess.success -= 1 <br/>
+      <br/>
+      best_guess.save()<br/>
+      <br/>
+      <p>Use whichever guess is the most successful "in the wild". When a guess fails, reduce its fitness, allowing another best guess to possibly arise. The visitor has to let us know if we were correct.</p>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="-600">
+      <p>Complex example: neural network</p>
+      <br/>
+      <ul>
+        <li>Input &amp; Data Structure<br/>
+        <br/>
+        nodes = retrieve()<br/>
+        nodes[user_data] = nodes.get(user_data, 0) + 1<br/>
+        <br/>
+        <li>Reduction &amp; Inference<br/>
+        <br/>
+        reduction = sorted(nodes, key=nodes.get)[-1]<br/>
+        <br/>
+      </ul>
+      <p><i>nodes</i> is a frequency chart.  If 200 appears twice, <i>nodes[200] == 2</i>. The strongest node wins. It's the mode average of the knowledge set. It's just another averaging function!</p>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-600">
+      <p>This can get really complicated...</p>
+      <br />
+      <ul>
+        <li>K-Means Clustering
+        <ul>
+          <li>combines means and neural network nodes
+          <li>clusters inputs into k buckets identified by k different mean averages
+          <li>infers the mean value of the bucket including or closest to the input
+        </ul>
+        <li>Bayes Classification
+        <ul>
+          <li>given some known probabilities, calculate some unknown probability, and infer from it
+          <li>e.g. given the probability that a site visitor weighs 150+lbs. (<i>P(150+)</i>) and that a 150+lbs. site visitor is male (<i>P(M|150+)</i>), calculates the probability that a male visitor weighs 150+lbs. (<i>P(150+|M)</i>)
+        </ul>
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="-600">
+      <q>Good news - the machine learning algorithms have already been written for you.</q>
+      <br />
+      <ul>
+        <li><a href="http://www.r-project.org/">The R Project for Statistical Computing</a>
+        <li><a href="http://mahout.apache.org/">Apache Mahout</a>
+        <li><a href="http://code.google.com/apis/predict/">Google Prediction API</a>
+        <li><a href="http://orange.biolab.si/">Orange</a>
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="7000" data-y="-600">
+      <q>Stop inventing "new" machine learning algorithms for your site. Just pick one!</q>
+      <p class="center"><img src="images/stop.jpg" width=40%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="8000" data-y="-600">
+      <q>OMGWTF! There are so many. Which one do I pick?</q>
+      <br/>
+      <p class="center"><img src="images/wtf.jpg" width=30%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="9000" data-y="-600">
+      <q>All of the above!</q>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="300">
+      <p>The Meta-Learning Algorithm</p>
+      <br/>
+      best_learning_algo = retrieve_most_successful_algorithm()<br/>
+      response.inference = best_learning_algo.guess(user_data)<br/>
+      <br/>
+      if we_guessed_correctly():<br/>
+      &nbsp;&nbsp;best_learning_algo.success += 1<br/>
+      else:<br/>
+      &nbsp;&nbsp;best_learning_algo.success -= 1 <br/>
+      <br/>
+      best_learning_algo.save()<br/>
+      <br/>
+      <p>It's the genetic algorithm applied to other learning algorithms. Implement all the learners, store them somewhere, and order them by how successful they are.</p>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="300">
+      <q>The "best"? The "most successful"?</q>
+      <br/>
+      <p class="center"><img src="images/best.jpg" width=50%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="300">
+      <p>A "Bestest" algorithm - a weighted random choice</p>
+      <br/>
+      <br/>
+      from random import uniform<br/>
+      algos = { 'kmeans': 50, 'mean': 25, 'bayes': 20, 'neural': 5 }<br/>
+      needle = uniform(0, sum(algos.values()))<br/>
+      for name in sorted(algos, key=algos.get):<br/>
+      &nbsp;&nbsp;needle -= algos[name]<br/>
+      &nbsp;&nbsp;if needle <= 0:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;break<br/>
+      # return name<br/>
+      <br />
+      <p class="center"><img src="images/weighted.png" width=50%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="300">
+      <q>FAIL! All weights must be &gt; 0 for that to work.</q>
+      <br/>
+      success = max(0, success - 1)<br/>
+      <br/>
+      <p class="center"><img src="images/fail.jpg" width=40%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="300">
+      <q>The algorithms may be free or cloud-cheap, but the data isn't.</q>
+      <q>Stop worrying about algorithms. It's the data, stupid!</q>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="300">
+      <q>There are two types of data</q>
+      <q>
+        <ul>
+          <li>Content
+          <li>Collaborative
+        </ul>
+      </q>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="300">
+      Content Data<br/>
+      <ul>
+        <li>E-Commerce
+        <ul>
+          <li>price
+          <li>color
+          <li>size
+        </ul>
+        <li>Music
+        <ul>
+          <li>genre
+          <li>beats-per-minute
+          <li>tempo
+        </ul>
+        <li>Site pages
+        <ul>
+          <li>main keywords
+          <li>length
+        </ul>
+      </ul>
+      <br />
+      It's data that describes the <i>content</i> on your site. When two pieces of content are similar, we infer a user who likes one will also like the other.
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="300">
+      Collaborative Data
+      <ul>
+          <li>gender
+          <li>age
+          <li>location
+          <li>favorite content
+          <li>friends
+        </ul>
+      </ul>
+      <br/>
+      It's data describing the <i>visitors</i> to your site. When two visitors are similar, we infer that they'll like the same stuff. 
+    </div>
+
+    <div class="step slide" data-x="7000" data-y="300">
+      "Numerification"<br/>
+      <br/>
+      Data needs to be numerical so you can do math on it.<br/>
+      <ul>
+        <li>gender: { 'male': 0, 'female': 1, 'other': 2}
+        <li>employed: { 'false': 0, 'true': 1}
+      </ul>
+      <br/>
+      When possible, "numerification" should be meaningful. Labels that are related map to numbers that are closer.
+      <ul>
+        <li>language: { 'en': 0, 'en-us': 1, 'en-gb': 2, 'es': 10, 'es-es': 11, 'es-mx': 12 }
+        <li>education: { 'some high-school': 0, 'high-school': 1, 'some college': 2, 'college': 3, 'masters': 4}
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="8000" data-y="300">
+      Sim Scores<br/>
+      <br/>
+      The fully numerified description of a piece of content or a visitor is its "DNA".<br/>
+      <br/>
+      ['gender', 'age', 'location_lat', 'location_long']<br/>
+      <br/>
+      becomes<br/>
+      <br/>
+      [0, 30, 26, -80]<br/>
+      <br/>
+      The <i>similarity score</i> between two pieces of content is the "distance" between these two "points". The lower the score, the more similar the content.<br/>
+      <br/>
+    </div>
+
+    <div class="step slide" data-x="9000" data-y="300">
+      Sim Score Algorithm<br/>
+      <br/>
+      import numpy<br/>
+      # 30, male, Miami<br/>
+      person1 = numpy.array((0, 30, 25.8, -80.2))<br/>
+      # 25, female, Ft. Lauderdale<br/>
+      person2 = numpy.array((1, 25, 26.1, -80.1))<br/>
+      <br/>
+      score = numpy.linalg.norm(person1 - person2)<br/>
+      # score is approx 5<br/>
+      <br/>
+      In numpy, the distance between the two points is the norm of the vector between those points. You may remember it better as the Euclidean distance as given by the Pythagorean theorem.<br/>
+      <br/>
+      score<sup>2</sup> = (a<sub>1</sub>-a<sub>2</sub>)<sup>2</sup> + (b<sub>1</sub>-b<sub>2</sub>)<sup>2</sup> + (c<sub>1</sub>-c<sub>2</sub>)<sup>2</sup> + (d<sub>1</sub>-d<sub>2</sub>)<sup>2</sup>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="1200">
+      <q>Performance</q>
+      <q>Machine learning is a "big data" problem. Learn how those guys solve these kinds of problems.</q>
+      <br/>
+      (Hints: MapReduce - I called it "reduction" for a reason, Apache Pig, Apache Hadoop, etc.)
+    </div>
+
+    <div class="step slide" data-x="0" data-y="1200">
+      The Performance Problem<br/>
+      <br/>
+      Say your website has 1 million songs. Imagine a grid with 10<sup>6</sup> rows and 10<sup>6</sup> columns. How many pairwise comparisons does that produce?<br/>
+      <br/>
+      10<sup>6</sup> * 10<sup>6</sup> = <strong>10<sup>12</sup></strong> (1 trillion*!)<br/>
+      <br/>
+      *actually more like half a trillion if you ignore A vs. A and assume (A vs. B) = (B vs. A), but still...<br/>
+      <br/>
+      Now add a collaborative analysis: every user is compared to every other user. More input!
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="1200">
+      The Performance Problem<br/>
+      <br/>
+      <ul>
+        <li>How long does it take to calculate all those scores?
+        <ul>
+          <li>How many numbers make up each song's "DNA"?<br/>
+          <br/>
+        </ul>
+        <li>Where do you store the results?
+        <ul>
+          <li>Hey database guy! You got room for 1 trillion rows lying around somewhere?<br/>
+          <br/>
+        </ul>
+        <li>How quickly can you lookup a result at runtime?
+        <ul>
+          <li>e.g. Generate the top 5 most similar songs.<br/>
+          <br/>
+        </ul>
+        <li>How often do you need to update your library?
+        <ul>
+          <li>e.g. If you update weekly, but it takes two weeks to structure and reduce the data, you'll never catch up.<br/>
+          <br/>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="1200">
+      A Common Performance Solution - Clustering<br/>
+      <br/>
+      Cluster the songs so that similar songs get grouped together. All songs in the same cluster are equally similar to each other.<br/>
+      <br/>
+      e.g. If you have 1 million songs, group them into chunks of 100 songs each, leaving 10,000 song-clusters.<br/>
+      <br/>
+      Algorithm options:<br/>
+      <ul>
+        <li>hierarchical
+        <li>k-means
+        <li>self-organizing maps
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="1200">
+      Clustering Benefits<br/>
+      <br/>
+      <strong>Storage:</strong> You only have to store 10,000 cluster ids instead of 1 trillion sim scores.<br/>
+      <br/>
+      <strong>Lookup:</strong> To find the songs most similar to any given song, randomly select other songs from the same cluster.<br/>
+      <br/>
+      <strong>Updates:</strong> Calculate "average DNAs" for each cluster. Place the new song in the cluster whose average DNA is closest. For the 1,000,001st song, that's 10,000 comparisons instead of 1 million.<br/>
+      <br/>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="1200">
+      <q class="center">Johnny 5 can learn!</q>
+      <p class="center"><img src="images/johnny_5.jpg" width="40%"></img></p>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="1200">
+      <q>Thanks for listening!</q>
+      <br/>
+      @eddroid<br/>
+      github.com/eddroid</br>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="1200">
+      Image Credits:<br/>
+      <br/>
+      Google Images:<br/>
+      <ul>
+        <li>http://www.schoolsignsonline.com.au/contents/media/34502-reduce-reuse-recycle.gif
+        <li>http://i0.kym-cdn.com/photos/images/newsfeed/000/039/080/5008_9c00_420.gif
+        <li>http://2.bp.blogspot.com/_g6jnLh81N64/TO48Xn1ZtnI/AAAAAAAAASA/MQHdSg2fQmI/s1600/Walking+skeleton.png
+        <li>http://www.coverbrowser.com/image/popular-library/158-1.jpg
+        <li>http://cache.jalopnik.com/assets/images/4/2008/06/lego_johnny_five.jpg
+        <li>http://www.retroist.com/wp-content/uploads/2011/07/johnny_5_is_alive_by_speedball0o.jpg
+        <li>http://www.schoolsignsonline.com.au/contents/media/34502-reduce-reuse-recycle.gif
+        <li>http://aux.iconpedia.net/uploads/1442736216.png
+        <li>http://blogs.villagevoice.com/runninscared/sstop.jpg
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="7000" data-y="1200">
+      Image Credits:<br/>
+      <br/>
+      Google Images:<br/>
+      <ul>
+        <li>http://profile.ak.fbcdn.net/hprofile-ak-snc4/162076_149773725075253_7380223_n.jpg
+        <li>http://4.bp.blogspot.com/_vd_zVJKziTE/TO_Ow5GbxoI/AAAAAAAAA8U/jbZ7VoM23yw/s400/mandy%2Bp.jpg
+        <li>http://obscureinternet.com/wp-content/uploads/Concert-Fail.jpg
+      </ul>
+      <br/>
+      http://eli.thegreenplace.net/2010/01/22/weighted-random-generation-in-python/<br/>
+      <ul>
+        <li>http://eli.thegreenplace.net/wp-content/uploads/2010/01/subweight.png
+      </ul>
+      <br/>
+      We beat that SOPA/PIPA thing, right?
+    </div>
+
+
+    <div class="step slide" data-x="8000" data-y="1200">
+      Extra Credit<br/>
+      <br/>
+      <ul>
+        <li>Derived properties (e.g. entropy)
+        <li>Alternate distances (e.g. Hamming, Manhattan, maximum)
+        <li>User algorithm preferences
+      </ul>
+    </div>
+
+    <!--
+    <!--
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` -- they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` -- they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` -- defines the scale of step element; default value is 1
+    -->
+    <div id="overview" class="step" data-x="4000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    Hint is not related to impress.js in any way.
+    
+    But it can show you how to use impress.js features in creative way.
+    
+    When the presentation step is shown (selected) it's element get's the class of "active" and `#impress` root
+    element get's the class based on active step id `step-ID` (where ID is the step id)... It probably is not
+    so clear because of all these IDs in here, so for example when the first step (the one with id of `bored`)
+    is active, `#impress` element get a class of `step-bored`.
+    
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation.
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+
+<!--
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because I was lazy, haven't wrapped the code in any kind of "DOM ready" event, so it will not work
+    if included too early in the source ;)
+-->
+<script src="js/impress.js"></script>
+
+</body>
+</html>
