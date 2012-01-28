@@ -1,3 +1,5 @@
 py/lib/*
 py/bin/*
 *.pyc
+py/.Python
+py/include/*
