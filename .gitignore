@@ -1,2 +1,2 @@
-lib/*
-bin/*
+py/lib/*
+py/bin/*
