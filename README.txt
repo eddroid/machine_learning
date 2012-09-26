@@ -6,10 +6,10 @@ http://bartaz.github.com/impress.js/
 /py/
 The Python version. v1.0
 
-
-Coming soon:
 /rb/
 The Ruby version.
+
+Coming soon:
 
 /barcamp/
 The generic version.
