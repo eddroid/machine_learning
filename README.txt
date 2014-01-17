@@ -5,12 +5,13 @@ http://bartaz.github.com/impress.js/
 
 /py/
 The Python version. v1.0
+http://eddroid.github.io/machine_learning/py/
 
 /rb/
-The Ruby version.
+The Ruby version. v1.1
+http://eddroid.github.io/machine_learning/rb/
 
-Coming soon:
+Coming next:
 
 /barcamp/
 The generic version.
-
